@@ -1,0 +1,22 @@
+{
+  "name": "constitution-diff",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pages:dev": "wrangler pages dev ./dist",
+    "deploy": "npm run build && wrangler pages deploy ./dist --project-name constitution-diff"
+  },
+  "dependencies": {
+    "astro": "latest",
+    "@astrojs/react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "diff": "latest"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
